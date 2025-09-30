@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel | Nate's Archive</title>
+
+  <!-- Load font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="travel">
+  <header>
+    <h1 class="site-title">Nate's Archive</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="travel.html" aria-current="page">Travel</a></li>
+        <li><a href="pets.html">Pets</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Intro section -->
+    <section class="intro">
+      <h2>Places I've Been to Recently</h2>
+      <p class="tagline">A photo collage from trips I've been on (click to get another look!)</p>
+    </section>
+
+    <!-- Gallery  -->
+    <section class="travel-gallery" aria-labelledby="travel-gallery-heading">
+      <h2 id="travel-gallery-heading" class="visually-hidden">Travel Photo Gallery</h2>
+
+      <div class="travel-photo">
+        <img src="assets/images/kyoto.jpg" alt="Kyoto, Japan" class="me-img">
+        <p class="caption">Kyoto, Japan</p>
+      </div>
+
+      <div class="travel-photo">
+        <img src="assets/images/chi.jpg" alt="Chicago, Illinois" class="me-img">
+        <p class="caption">Chicago, Illinois</p>
+      </div>
+
+      <div class="travel-photo">
+        <img src="assets/images/yonsei.jpg" alt="Seoul, South Korea" class="me-img">
+        <p class="caption">Seoul, South Korea</p>
+      </div>
+
+      <div class="travel-photo">
+        <img src="assets/images/tokyo.jpg" alt="Tokyo, Japan" class="me-img">
+        <p class="caption">Tokyo, Japan</p>
+      </div>
+
+      <div class="travel-photo">
+        <img src="assets/images/sf.jpg" alt="San Francisco, California" class="me-img">
+        <p class="caption">San Francisco, California</p>
+      </div>
+
+      <div class="travel-photo">
+        <img src="assets/images/phi.jpg" alt="Philadelphia, Pennsylvania" class="me-img">
+        <p class="caption">Philadelphia, Pennsylvania</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Nate Moser</p>
+  </footer>
+
+  <!-- Image lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">×</button>
+
+    <img id="lightbox-img"
+         src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+         alt="">
+    <p id="lightbox-cap"></p>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

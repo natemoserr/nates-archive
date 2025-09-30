@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Nate's Archive</title>
+
+  <!-- Load fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="home">
+  <header>
+    <h1 class="site-title">Nate's Archive</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>   
+        <li><a href="about.html">About</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="pets.html">Pets</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Hi, this is my first hand-coded website!</h2>
+      <p class="tagline">I built this webpage to practice HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <!-- Give the section a heading (can be visually hidden if you don't want to see it) -->
+    <section class="image">
+      <h2 class="visually-hidden">Homepage Photo</h2>
+      <img src="assets/images/me.jpeg" alt="Nate in Busan, South Korea" class="me-img">
+      <p class="caption">— Busan, South Korea</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Nate Moser</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+

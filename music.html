@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Music | Nate's Archive</title>
+
+  <!-- Load font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="music">
+  <header>
+    <h1 class="site-title">Nate's Archive</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="music.html" aria-current="page">Music</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="pets.html">Pets</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Table -->
+  <section aria-label="Top 3 records" class="container">
+    <h3>Top 3 Records</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Album</th>
+          <th>Artist</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="assets/images/hob.jpg" alt="House of Balloons album cover" class="me-img table-img"></td>
+          <td>The Weeknd</td>
+          <td>2011</td>
+        </tr>
+        <tr>
+          <td><img src="assets/images/mfdoom.jpg" alt="Madvillainy album cover" class="me-img table-img"></td>
+          <td>MF DOOM, Madlib</td>
+          <td>2004</td>
+        </tr>
+        <tr>
+          <td><img src="assets/images/orange.jpg" alt="Channel Orange album cover" class="me-img table-img"></td>
+          <td>Frank Ocean</td>
+          <td>2012</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <main>
+    <section class="intro">
+      <h2>A Collection of My Ten Favorite Records</h2>
+    </section>
+
+    <!-- Albums -->
+    <section class="images">
+      <h2 class="visually-hidden">Album Gallery</h2>
+
+      <div class="image">
+        <p class="tagline">House of Balloons • The Weeknd (2011)</p>
+        <img src="assets/images/hob.jpg" alt="House of Balloons cover" class="me-img">
+        <p class="caption">Favorite Song: <span class="tag">The Knowing</span></p>
+      </div>
+
+      <div class="image">
+        <p class="tagline">Currents • Tame Impala (2015)</p>
+        <img src="assets/images/tameimpala.jpg" alt="Currents cover" class="me-img">
+        <p class="caption">Favorite Song: <span class="tag">Let It Happen</span></p>
+      </div>
+
+      <div class="image">
+        <p class="tagline">Madvillainy • MF DOOM & Madlib (2004)</p>
+        <img src="assets/images/mfdoom.jpg" alt="Madvillainy cover" class="me-img">
+        <p class="caption">Favorite Song: <span class="tag">Fancy Clown</span></p>
+      </div>
+
+      <div class="image">
+        <p class="tagline">OK Computer • Radiohead (1997)</p>
+        <img src="assets/images/radiohead.jpg" alt="OK Computer cover" class="me-img">
+        <p class="caption">Favorite Song: <span class="tag">Let Down</span></p>
+      </div>
+
+      <div class="image">
+        <p class="tagline">Modal Soul • Nujabes (2005)</p>
+        <img src="assets/images/nuj.jpg" alt="Modal Soul cover" class="me-img">
+        <p class="caption">Favorite Song: <span class="tag">Feather</span></p>
+      </div>
+
+      <div class="image">
+        <p class="tagline">In Rainbows • Radiohead (2007)</p>
+        <img src="assets/images/inrainbows.jpg" alt="In Rainbows cover" class="me-img">
+        <p class="caption">Favorite Song: <span class="tag">Weird Fishes / Arpeggi</span></p>
+      </div>
+
+      <div class="image">
+        <p class="tagline">Ctrl • SZA (2017)</p>
+        <img src="assets/images/sza.jpg" alt="Ctrl cover" class="me-img">
+        <p class="caption">Favorite Song: <span class="tag">Drew Barrymore</span></p>
+      </div>
+
+      <div class="image">
+        <p class="tagline">Channel Orange • Frank Ocean (2012)</p>
+        <img src="assets/images/orange.jpg" alt="Channel Orange cover" class="me-img">
+        <p class="caption">Favorite Song: <span class="tag">Pink Matter</span></p>
+      </div>
+
+      <div class="image">
+        <p class="tagline">Sail Out • Jhené Aiko (2013)</p>
+        <img src="assets/images/jhene.jpg" alt="Sail Out cover" class="me-img">
+        <p class="caption">Favorite Song: <span class="tag">The Worst</span></p>
+      </div>
+
+      <div class="image">
+        <p class="tagline">OFFLINE! • JPEGMAFIA (2021)</p>
+        <img src="assets/images/peggy.jpeg" alt="OFFLINE! cover" class="me-img">
+        <p class="caption">Favorite Song: <span class="tag">DIKEMBE!</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Nate Moser</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

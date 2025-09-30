@@ -1,0 +1,368 @@
+/* Basic layout */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter';
+  color: #222;
+  line-height: 1.75;
+  background: #fff;
+}
+
+/* Header + navigation */
+header {
+  text-align: center;
+  padding: 2rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  letter-spacing:0.5px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  padding: 0.25rem 0; 
+  letter-spacing: 0.25px;
+}
+
+nav a:visited { color:#444; }
+nav a:focus-visible { outline:2px solid #0d6efd; outline-offset:4px; }
+
+nav a:hover {
+  color: #0d6efd;
+}
+
+/* Intro section - Homepage */
+body.home .intro {
+  text-align: center;
+  padding: 4rem 1rem; 
+}
+
+body.home .intro h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+body.home .intro .tagline {
+  font-size: 1rem;
+  color: #888;
+  margin-top: 1rem; 
+}
+
+/* Intro section - About */
+body.about .intro {
+  text-align: center;
+  padding: 4rem 1rem; 
+}
+
+body.about .intro h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+body.about .intro .tagline {
+  font-size: 1rem;
+  max-width: 600px;
+  color: #888;
+  margin: 1rem auto;
+}
+
+/* Intro section - Music */
+body.music .intro {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+body.music .intro h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.images .image .tagline {
+  font-size: .9rem;
+  font-style: italic;
+  color: #888;
+  margin: 0 0 .5rem 0;
+}
+
+/* Travel */
+.travel-gallery{
+  columns: 3 280px;
+  column-gap: 1.25rem;
+  max-width: 1100px;
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+}
+
+.travel-photo{
+  break-inside: avoid;
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 1.25rem 0;
+  text-align: center;            
+}
+
+.travel-photo img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: transform .18s ease, box-shadow .18s ease;
+  cursor: zoom-in;                
+}
+
+.travel-photo img:hover{
+  transform: scale(1.015);
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+}
+
+.caption{
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #666;
+  text-align: center;             
+}
+
+/* Intro section - Travel */
+body.travel .intro{
+  text-align: center;
+  padding: 4rem 1rem;
+}
+body.travel .intro h2{ font-size: 2rem; margin-bottom: .5rem; }
+body.travel .intro .tagline{ color:#888; }
+
+.travel-photo img{ aspect-ratio: 4 / 3; object-fit: cover; }
+
+/* Image + caption section - Homepage */
+.image {
+  max-width: 500px;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.me-img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.caption {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #666;
+}
+
+/* Image + caption section - About */
+.image {
+  max-width: 500px;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.me-img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.caption {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #666;
+}
+
+/* Image + caption section - Music */
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem auto 0;
+  max-width: 1100px;
+}
+
+.images .image {
+  width: 180px;        
+  text-align: center;
+  margin: 0;           
+}
+
+.images .image .caption {
+  margin-top: .5rem;
+  font-size: .7rem;
+  font-style: italic;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Lightbox */
+.lightbox{
+  position: fixed; inset:0; background: rgba(0,0,0,.8);
+  display:none; align-items:center; justify-content:center;
+  padding:2rem; z-index:9999;
+}
+.lightbox.open{ display:flex; }
+.lightbox img{
+  max-width: min(92vw,1100px);
+  max-height: 80vh;
+  border-radius: 12px;
+  display:block;
+}
+.lightbox p{ color:#eee; margin-top:.75rem; text-align:center; font-style:italic; }
+.lightbox-close{
+  position:absolute; top:14px; right:16px;
+  background:transparent; border:0; color:#fff;
+  font-size:2rem; line-height:1; cursor:pointer;
+}
+
+/* Fix images on music tab */
+
+.images .image {
+  width: 180px;        
+  text-align: center;
+  margin: 0; 
+  display: flex;              
+  flex-direction: column;     
+  justify-content: flex-start;
+  min-height: 280px;
+}          
+.images .image .tagline {
+  min-height: 3.5em;          
+  display: flex;
+  align-items: flex-end;      
+  justify-content: center;    
+  text-align: center;
+}
+
+/* Intro section - Pets */
+body.pets .intro {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+body.pets .intro h2 { font-size: 2rem; margin-bottom: .5rem; }
+body.pets .intro .tagline { color: #888; }
+
+/* Pets gallery */
+.pet-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.pet-card {
+  width: 220px;
+  text-align: center;
+}
+
+.pet-card img {
+  width: 100%;
+  height: 220px;      
+  object-fit: cover;   
+  border-radius: 10px;
+  display: block;
+}
+
+.pet-card .caption {
+  margin-top: .5rem;
+  font-size: .9rem;
+  color: #555;
+}
+
+/* More music additions*/
+
+/* Span */
+.tag { padding: .1rem .4rem; border-radius: .4rem; background:#f1f5f9; }
+
+/* Table layout */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table thead th {
+  background: #f8fafc;
+  font-weight: 600;
+  color: #111;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table-img {
+  width: 180px;   
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Hide visually but keep accessible for readers */
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(50%);
+}
+
+
+
+
+
+
+
+
+

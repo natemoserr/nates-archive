@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pets | Nate's Archive</title>
+
+  <!-- Fonts + styles  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="pets">
+  <header>
+    <h1 class="site-title">Nate's Archive</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="pets.html" aria-current="page">Pets</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Meet My Pets</h2>
+      <p class="tagline">Here are my five best companions 🐾</p>
+    </section>
+
+    <!-- Gallery -->
+    <section class="pet-gallery" aria-labelledby="pets-heading">
+      <h2 id="pets-heading" class="visually-hidden">Pet Gallery</h2>
+
+      <div class="pet-card">
+        <img src="assets/images/eleven.jpg" alt="Eleven the Maine Coon">
+        <p class="caption"><strong>Eleven</strong> — Maine Coon, timid and reserved but likes attention</p>
+      </div>
+
+      <div class="pet-card">
+        <img src="assets/images/charlie.jpg" alt="Charlie the short hair cat">
+        <p class="caption"><strong>Charlie</strong> — Short hair, playful, enjoys to be in the bathroom</p>
+      </div>
+
+      <div class="pet-card">
+        <img src="assets/images/ben.jpg" alt="Ben the Maine Coon mix">
+        <p class="caption"><strong>Ben</strong> — Maine Coon mix, restful, treats are a necessity</p>
+      </div>
+
+      <div class="pet-card">
+        <img src="assets/images/daisy.jpg" alt="Daisy the calico cat">
+        <p class="caption"><strong>Daisy</strong> — Calico, mischievous, likes to lay on the garage floor</p>
+      </div>
+
+      <div class="pet-card">
+        <img src="assets/images/archie.jpg" alt="Archie the Goldendoodle">
+        <p class="caption"><strong>Archie</strong> — Golden doodle, curious, loves to go on walks</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Nate Moser</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
